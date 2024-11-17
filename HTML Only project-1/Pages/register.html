@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+</head>
+<body>
+    <header>
+        <a href="index.html"><img src="../Multimedia/new_cn_logo.svg" height="35" alt="Coding ninjas logo"></a>
+        <h2>Create an Account</h2>
+    </header>
+    
+    <section id="registeration-form">
+        <form action="/register" method="post">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label for="fullname">Full Name:</label>
+                <input type="text" name="fullname" id="fullname" minlength="3" maxlength="15" required>
+                <br /><br />
+    
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" required>
+                <br /><br />
+    
+                <label for="username">Username:</label>
+                <input type="text" name="username" id="username" minlength="5" maxlength="20" required>
+                <br /><br />
+    
+                <label for="password">Password:</label>
+                <input type="password" name="password" id="password" minlength="5" maxlength="20" required>
+                <br /><br />
+    
+                <label for="usertype">User Type:</label>
+                <select id="usertype" name="usertype" required>
+                    <option value="" disabled selected>Select user type</option>
+                    <option value="admin">Admin</option>
+                    <option value="student">Student</option>
+                </select>
+                <br /><br />
+    
+                <label for="course">Select Course:</label>
+                <select id="course" name="course">
+                    <option value="" disabled selected>Select a course</option>
+                    <option value="web_development">Course 1 - Web Development</option>
+                    <option value="data_science">Course 2 - Data Science</option>
+                    <option value="digital_marketing">Course 3 - Digital Marketing</option>
+                    <option value="android_development">Course 4 - android development</option>
+                </select>
+                <br /><br />
+    
+                <input type="submit" value="Register">
+            </fieldset>
+        </form>
+    </section>
+    
+</body>
+</html>
